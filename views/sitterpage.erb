@@ -1,0 +1,30 @@
+<div class="page_wrapper">
+  <div class="bg-mask">
+    <div class="page_panel">
+      <div class="page_title">
+        <h1>Sitterpage</h1>
+        <div class="profile_image">
+          <div class="profile_image_img">
+            <img src="<%= @profile_image %>" alt="">
+            <a href="#" id="image_change_open_sitter"><i class="fas fa-camera"></i></a>
+          </div>
+        </div>
+        <h3><%= @last_name %> <%= @first_name %>さん</h3>
+      </div>
+      <div id="image_change_panel_sitter">
+        <div class="image_change_button">
+          <a href="#" id="image_change_close_sitter"><i class="fas fa-times close_button"></i></a>
+        </div>
+        <div class="image_change_form">
+          <form action="/image_change_sitter" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" id="file">
+            <input type="submit" class="submit_btn" value="変更">
+          </form>
+        </div>
+      </div>
+      <div class="round_left"><a class="page_link" href="/logout"><i class="fas fa-sign-out-alt"></i></a></div>
+      <div class="round_right"><a class="page_link" href="/profile_edit_sitter"><i class="fas fa-user"></i></a></div>
+      <div class="round_bottom"><a class="page_link" href="/reserve_list">予約一覧</a></div>
+    </div>
+  </div>
+</div>

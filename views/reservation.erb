@@ -1,0 +1,49 @@
+<div class="list_wrapper">
+  <div class="bg-mask">
+    <div class="list_panel">
+      <div class="page_title">
+        <h1>Reserve</h1>
+      </div>
+      <!-- searchへのリンク -->
+      <div class="round_add">
+        <a class="page_link" href="/reserve_search">
+          <i class="fas fa-search"></i>
+        </a>
+      </div>
+      <!-- 前のページに戻る -->
+      <div class="round_back">
+        <a class="page_link" href="/search_list">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+      </div>
+      <!-- formで予約済みにする -->
+
+      <div class="reservation_panel">
+        <div class="prof_area">
+          <div class="prof_img"><img src="<%= @image_pass %>" alt=""></div>
+          <div class="prof_name">
+            <h2><%= @last_name %>
+              <%= @first_name %>さん</h2>
+          </div>
+        </div>
+        <div class="introduce_list">
+          <ul>
+            <li>
+              <i class="fas fa-calendar-alt"></i><%= @date %></li>
+            <li>
+              <i class="fas fa-clock"></i><%= @start_time %>〜<%= @end_time %></li>
+            <li>
+              <i class="fas fa-map-marked-alt"></i><%= @region %></li>
+            <li>
+              <i class="fas fa-comment-alt"></i><%= @introduce %></li>
+          </ul>
+        </div>
+      </div>
+
+      <form action="/reserve" method="POST">
+        <input type="hidden" name="reserve_id" value="<%= @reserve_id %>">
+        <input type="submit" class="submit_btn" value="予約する">
+      </form>
+    </div>
+  </div>
+</div>

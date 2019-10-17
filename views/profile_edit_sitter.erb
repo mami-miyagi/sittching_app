@@ -1,0 +1,36 @@
+<div class="edit_wrapper">
+  <div class="bg_mask_edit">
+    <div class="prof_edit_panel">
+      <div class="page_title">
+        <h1>Profile edit</h1>
+        <p>プロフィール編集</p>
+      </div>
+      <form class="edit_area_sitter" action="/profile_edit_sitter" method="POST" enctype="multipart/form-data">
+        <div class="cp_iptxt_par">
+          <div class="cp_iptxt_child cp_iptxt_child_left">
+            <label class="ef">
+              <textarea name="last_name" rows="1" cols="18"><%= @last_name%></textarea>
+            </label>
+          </div>
+          <div class="cp_iptxt_child">
+            <label class="ef">
+              <textarea name="first_name" rows="1" cols="18"><%= @first_name%></textarea>
+            </label>
+          </div>
+        </div>
+        <div class="cp_iptxt">
+          <label class="ef">
+            <textarea name="region" rows="1" cols="40"><%= @region %></textarea>
+          </label>
+        </div>
+        <div class="introduce_iptxt">
+          <label class="ef">
+            <textarea name="introduce" rows="4" cols="40"><%= @introduce %></textarea>
+          </label>
+        </div>
+        <input type="submit" class="submit_btn" value="確定する">
+      </form>
+    </div>
+  </div>
+
+</div>

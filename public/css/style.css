@@ -1,0 +1,1022 @@
+/* ------------------------------------------------------------------------------
+	 Typography
+-------------------------------------------------------------------------------*/
+p {
+  font-size: 14px;
+  line-height: 22.4px;
+  color: #6c7279;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  color: #4c4c4c;
+  font-size: 3em;
+}
+
+h2 {
+  font-family: 'Dancing Script', cursive;
+  color: #4c4c4c;
+  /* font-size: 40px; */
+}
+
+h3 {
+  font-size: 28px;
+  color: #2d3033;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 22px;
+  color: #2d3033;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 14px;
+  color: #2d3033;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-large {
+  padding: 15px 40px;
+}
+
+/* ------------------------------------------------------------------------------
+	 General Style
+-------------------------------------------------------------------------------*/
+a {
+	color: #00ac97;
+  text-decoration: none;
+}
+/* a:hover, a:focus {
+	text-decoration: none;
+	-moz-transition: background-color, color, 0.3s;
+	-o-transition: background-color, color, 0.3s;
+	-webkit-transition: background-color, color, 0.3s;
+	transition: background-color, color, 0.3s;
+} */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #6c7279;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-gutter [class*=col-] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.carousel-inner {
+  height: 450px;
+}
+
+#all {
+  width: 350px;
+  /* height: 650px; */
+  margin: auto;
+}
+
+section {
+  width: 90%;
+  margin: auto;
+}
+
+.page_title{
+  position: relative;
+  top:5%;
+}
+
+.list_title{
+  position: relative;
+  top:5%;
+}
+
+/* ------------------------------------------------------------------------------
+    TOP
+-------------------------------------------------------------------------------*/
+#top {
+  width: 100%;
+  height: 650px;
+  background-image: url(/images/top_image01.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+}
+
+.top_area {
+  position: relative;
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  height: 100%;
+}
+
+.text_area {
+  margin: auto;
+  width: 70%;
+}
+
+.text_area p {
+  line-height: 1.5em;
+}
+
+.round_area{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px gray;
+}
+
+.btn_area{
+  margin-top: 50px;
+}
+
+.link_text{
+  font-size: 0.8em;
+}
+/* ------------------------------------------------------------------------------
+    button
+-------------------------------------------------------------------------------*/
+.square_btn {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: #FFF;
+  background-image: -webkit-linear-gradient(45deg, #00ac97 0%, #006a6c 100%);
+  background-image: linear-gradient(45deg, #00ac97 0%, #006a6c 100%);
+  transition: .4s;
+  box-shadow: 1px 1px 2px gray;
+}
+
+.square_btn:hover {
+  background-image: -webkit-linear-gradient(45deg, #006a6c  0%, #00ac97 100%);
+  background-image: linear-gradient(45deg, #006a6c  0%, #00ac97 100%);
+}
+
+/* ------------------------------------------------------------------------------
+    Form
+-------------------------------------------------------------------------------*/
+.form_wrapper{
+  width: 100%;
+  height: 650px;
+  background-image: url(/images/top_image01.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+}
+
+.bg-mask {
+  height: 100%;
+  background: rgba(255,255,255,0.7);
+}
+
+.form_panel{
+  position: relative;
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  height: 100%;
+}
+
+.form_area_login{
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  height: 35%;
+  padding: 5px 5px;
+  margin: auto;
+}
+
+.form_area {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  padding: 5px 5px;
+  margin: auto;
+}
+
+.form_area_sitter{
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  height: 50%;
+  padding: 5px 5px;
+  margin: auto;
+}
+
+.cp_iptxt {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cp_iptxt_par {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cp_iptxt_child {
+  width: 50%;
+}
+
+.cp_iptxt_child_left {
+  margin-right: 5px;
+}
+
+.cp_iptxt input[type='text'],
+.cp_iptxt input[type='password']{
+  font: 15px/24px sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.7em;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  color: #504946;
+  border: 1px solid #aaaaaa;
+  border-radius: 40px;
+}
+
+.ef input[type='text']:focus,
+.ef input[type='password']:focus{
+  border: 1px solid #006a6c;
+  outline: none;
+  box-shadow: 0 0 5px 1px rgba(0, 106, 108, .5);
+}
+
+.cp_iptxt_child input[type='text'] {
+  font: 15px/24px sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.7em;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  color: #504946;
+  border: 1px solid #aaaaaa;
+  border-radius: 40px;
+}
+
+.submit_btn {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.05em;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #FFF;
+  background-image: -webkit-linear-gradient(45deg, #00ac97 0%, #006a6c 100%);
+  background-image: linear-gradient(45deg, #00ac97 0%, #006a6c 100%);
+  box-shadow: 1px 1px 2px gray;
+}
+
+.submit_btn:hover {
+  background-image: -webkit-linear-gradient(45deg, #006a6c  0%, #00ac97 100%);
+  background-image: linear-gradient(45deg, #006a6c  0%, #00ac97 100%);
+}
+
+/* ------------------------------------------------------------------------------
+    sitter & parent page
+-------------------------------------------------------------------------------*/
+.page_wrapper{
+  width: 100%;
+  /* height: 100%; */
+  height: 650px;
+  background-image: url(/images/whitewood.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+}
+
+.bg-mask {
+  height: 100%;
+  background: rgba(255,255,255,0.7);
+}
+
+.page_panel{
+  position: relative;
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  height: 100%;
+}
+
+.round_left{
+  position: absolute;
+  left:  5%;
+  bottom: 30%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 1.2em;
+  padding: 5px 5px;
+  border-radius: 50%;
+  /* background: rgba(255,139,95,0.9); */
+  background-image: -webkit-linear-gradient(45deg, #00ac97 0%, #006a6c 100%);
+  background-image: linear-gradient(45deg, #00ac97 0%, #006a6c 100%);
+  box-shadow: 1px 1px 2px gray;
+}
+
+.round_right{
+  position: absolute;
+  right:  5%;
+  bottom: 30%;
+  width: 60px;
+  height: 60px;
+  font-size: 1.2em;
+  line-height: 60px;
+  padding: 5px 5px;
+  border-radius: 50%;
+  /* background: rgba(255,139,95,0.9); */
+  background-image: -webkit-linear-gradient(45deg, #00ac97 0%, #006a6c 100%);
+  background-image: linear-gradient(45deg, #00ac97 0%, #006a6c 100%);
+  box-shadow: 1px 1px 2px gray;
+}
+
+.round_bottom{
+  position: absolute;
+  bottom: 5%;
+  left: 33%;
+  width: 100px;
+  height: 100px;
+  font-size: 1.5em;
+  line-height: 100px;
+  padding: 10px 10px;
+  border-radius: 50%;
+  /* background: rgba(255,139,95,0.9); */
+  background-image: -webkit-linear-gradient(45deg, #00ac97 0%, #006a6c 100%);
+  background-image: linear-gradient(45deg, #00ac97 0%, #006a6c 100%);
+  box-shadow: 1px 1px 2px gray;
+}
+
+.page_link{
+  color: white;
+}
+
+.profile_image{
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+
+.profile_image_img{
+  position: relative;
+}
+
+.profile_image_img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#image_change_open_sitter{
+  display: inline-block;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  background-image: linear-gradient(45deg, #00ac97 0%, #006a6c 100%);
+  box-shadow: 0.5px 0.5px 1px gray;
+  border-radius: 50%;
+}
+
+#image_change_open_parent{
+  display: inline-block;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  background-image: linear-gradient(45deg, #00ac97 0%, #006a6c 100%);
+  box-shadow: 0.5px 0.5px 1px gray;
+  border-radius: 50%;
+}
+
+#profile_edit_parent{
+  display: inline-block;
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  background-image: linear-gradient(45deg, #00ac97 0%, #006a6c 100%);
+  box-shadow: 0.5px 0.5px 1px gray;
+  border-radius: 50%;
+}
+
+.fa-camera ,
+.fa-user{
+  color: #ffffff;
+}
+/* ------------------------------------------------------------------------------
+	 reserve & seach List
+-------------------------------------------------------------------------------*/
+.list_wrapper{
+  position: relative;
+  width: 100%;
+  /* height: 100%; */
+  height: 650px;
+  background-color: #f8f4e6;
+  background-image: url(/images/whiteblock.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+}
+
+.list_panel{
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  /* height: 100%; */
+}
+
+.round_add{
+  position: absolute;
+  right:  5%;
+  bottom: 5%;
+  width: 60px;
+  height: 60px;
+  z-index: 90;
+  line-height: 60px;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 5px 5px;
+  border-radius: 50%;
+  background-image: -webkit-linear-gradient(45deg, #00ac97 0%, #006a6c 100%);
+  background-image: linear-gradient(45deg, #00ac97 0%, #006a6c 100%);
+  box-shadow: 1px 1px 2px gray;
+}
+
+.page_link{
+  color: white;
+}
+
+.round_back{
+  position: absolute;
+  left:  5%;
+  bottom: 5%;
+  width: 60px;
+  height: 60px;
+  z-index: 90;
+  line-height: 60px;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 5px 5px;
+  border-radius: 50%;
+  background-image: -webkit-linear-gradient(45deg, #00ac97 0%, #006a6c 100%);
+  background-image: linear-gradient(45deg, #00ac97 0%, #006a6c 100%);
+  box-shadow: 1px 1px 2px gray;
+}
+
+/* ------------------------------------------------------------------------------
+	 reserve_add
+-------------------------------------------------------------------------------*/
+.add_wrapper{
+  width: 100%;
+  /* height: 100%; */
+  height: 650px;
+  background-image: url(/images/whiteblock.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+}
+
+.form_area_reserve_add{
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  height: 50%;
+  padding: 5px 5px;
+  margin: auto;
+  /* background-color: rgba(255,255,255,0.6);
+  border-radius: 50%; */
+}
+
+.cp_iptxt {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cp_iptxt_par {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cp_iptxt_child {
+  width: 50%;
+}
+
+.cp_iptxt_child_left {
+  margin-right: 5px;
+}
+
+.cp_iptxt input[type='date'],
+.cp_iptxt_child input[type='time'] {
+  font: 15px/24px sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.7em;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  color: #504946;
+  border: 1px solid #aaaaaa;
+  border-radius: 40px;
+}
+
+.cp_iptxt input[type='date']:focus,
+.ef input[type='time']:focus{
+  border: 1px solid #006a6c;
+  outline: none;
+  box-shadow: 0 0 5px 1px rgba(0, 106, 108, .5);
+}
+
+.submit_btn {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.05em;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #FFF;
+  background-image: -webkit-linear-gradient(45deg, #00ac97 0%, #006a6c 100%);
+  background-image: linear-gradient(45deg, #00ac97 0%, #006a6c 100%);
+}
+
+.submit_btn:hover {
+  background-image: -webkit-linear-gradient(45deg, #006a6c  0%, #00ac97 100%);
+  background-image: linear-gradient(45deg, #006a6c  0%, #00ac97 100%);
+}
+
+/* ------------------------------------------------------------------------------
+	 reserve_search
+-------------------------------------------------------------------------------*/
+.search_wrapper{
+  width: 100%;
+  /* height: 100%; */
+  height: 650px;
+  background-image: url(/images/whiteblock.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+}
+
+.form_area_reserve_search{
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  height: 30%;
+  padding: 5px 5px;
+  margin: auto;
+  /* background-color: rgba(255,255,255,0.6);
+  border-radius: 50%; */
+}
+
+.cp_iptxt {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.cp_iptxt input[type='date'] {
+  font: 15px/24px sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.7em;
+  margin-top: 10px;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  color: #504946;
+  border: 1px solid #aaaaaa;
+  border-radius: 40px;
+}
+
+.cp_iptxt input[type='date']:focus{
+  border: 1px solid #006a6c;
+  outline: none;
+  box-shadow: 0 0 5px 1px rgba(0, 106, 108, .5);
+}
+
+.submit_btn {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.05em;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #FFF;
+  background-image: -webkit-linear-gradient(45deg, #00ac97 0%, #006a6c 100%);
+  background-image: linear-gradient(45deg, #00ac97 0%, #006a6c 100%);
+}
+
+.submit_btn:hover {
+  background-image: -webkit-linear-gradient(45deg, #006a6c  0%, #00ac97 100%);
+  background-image: linear-gradient(45deg, #006a6c  0%, #00ac97 100%);
+}
+
+/* ------------------------------------------------------------------------------
+	 search_list
+-------------------------------------------------------------------------------*/
+.searchlist_panel{
+  position: relative;
+  top:6%;
+}
+
+.searchlist{
+  display: flex;
+  width: 90%;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 1px 1px 2px #abb1b5;
+}
+
+.panel_image_box{
+  width: 30%;
+}
+
+.panel_image{
+  border-radius: 50%;
+}
+
+.man{
+  width: 100%;
+  height: 100%;
+  padding: 3px;
+  background-color: #a1d8e6;
+  border-radius: 50%;
+}
+
+.woman{
+  width: 100%;
+  height: 100%;
+  padding: 3px;
+  background-color: #de82a7;
+  border-radius: 50%;
+}
+
+.panel_text_box{
+  width: 45%;
+  margin-top: 3px;
+  margin-left: 20px;
+}
+
+.panel_text{
+  text-align: left;
+}
+
+.under_space{
+  margin-bottom: 3px;
+}
+
+/* ------------------------------------------------------------------------------
+	 reservation
+-------------------------------------------------------------------------------*/
+
+.reservation_panel{
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.prof_area{
+  display: flex;
+  margin: auto;
+}
+
+.prof_img{
+  width: 30%;
+}
+
+.prof_img img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.prof_name{
+  width: 60%;
+}
+
+.introduce_list{
+  text-align: left;
+  padding: 10px 15px;
+}
+
+.introduce_list li{
+  margin-bottom: 5px;
+}
+
+.introduce_list i{
+  margin-right: 5px;
+}
+/* ------------------------------------------------------------------------------
+	 Reservesitter List
+-------------------------------------------------------------------------------*/
+.reservesitter_wrapper{
+  position: relative;
+  width: 100%;
+  height: 650px;
+  background-color: #f8f4e6;
+  background-image: url(/images/whiteblock.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+}
+
+.reservesitter_panel{
+  text-align: center;
+  margin: auto;
+  width: 90%;
+}
+
+.reservesitterlist_panel{
+  position: relative;
+  top:6%;
+}
+
+.reservesitterlist{
+  display: flex;
+  width: 90%;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 1px 1px 2px #abb1b5;
+}
+
+.panel_text_box{
+  width: 60%;
+  margin-top: 3px;
+  margin-left: 30px;
+}
+
+.panel_link_box{
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 5px 5px;
+  margin-top: 10px;
+  border-radius: 50%;
+  background-image: -webkit-linear-gradient(45deg, #00ac97 0%, #006a6c 100%);
+  background-image: linear-gradient(45deg, #00ac97 0%, #006a6c 100%);
+  box-shadow: 1px 1px 2px gray;
+}
+
+.page_link{
+  color: white;
+}
+
+/* ------------------------------------------------------------------------------
+	 ReserveList
+-------------------------------------------------------------------------------*/
+.myreservelist_wrapper{
+  position: relative;
+  width: 100%;
+  height: 650px;
+  background-color: #f8f4e6;
+  background-image: url(/images/whiteblock.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+}
+
+.myreservelist_panel{
+  text-align: center;
+  margin: auto;
+  width: 80%;
+}
+
+.myreservelist_area{
+  position: relative;
+  top:6%;
+}
+
+.myreservelist{
+  display: flex;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 1px 1px 2px #abb1b5;
+}
+
+.reservedate_box{
+  width: 70%;
+}
+
+.reservedate_box ul{
+  margin-top: 5px;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.reserveedit_box{
+  width: 30%;
+}
+
+.round_edit0{
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 5px 5px;
+  border-radius: 50%;
+  background-image: -webkit-linear-gradient(45deg, #00ac97 0%, #006a6c 100%);
+  background-image: linear-gradient(45deg, #00ac97 0%, #006a6c 100%);
+  box-shadow: 1px 1px 2px gray;
+}
+
+.round_edit1{
+  display: none;
+}
+
+/* ------------------------------------------------------------------------------
+	 Profile edit
+-------------------------------------------------------------------------------*/
+
+.edit_wrapper{
+  width: 100%;
+  height: 650px;
+  background-image: url(/images/whitewood.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+}
+
+.bg_mask_edit {
+  height: 100%;
+  background: rgba(255,255,255,0.7);
+}
+
+.prof_edit_panel{
+  position: relative;
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  height: 100%;
+}
+
+.edit_area_sitter{
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  padding: 5px 5px;
+  margin: auto;
+}
+
+.cp_iptxt {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.cp_iptxt_par {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.cp_iptxt_child {
+  width: 50%;
+}
+
+.cp_iptxt_child_left {
+  margin-right: 5px;
+}
+
+.cp_iptxt textarea{
+  font: 15px/24px sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.7em;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  color: #777;
+  border: 1px solid #aaaaaa;
+  border-radius: 40px;
+}
+
+.ef textarea:focus{
+  border: 1px solid #006a6c;
+  outline: none;
+  box-shadow: 0 0 5px 1px rgba(0, 106, 108, .5);
+}
+
+.introduce_iptxt textarea{
+  font: 15px/24px sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.7em;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  color: #777;
+  border: 1px solid #aaaaaa;
+  border-radius: 25px;
+  margin-bottom: 10px;
+}
+
+.ef textarea:focus{
+  border: 1px solid #006a6c;
+  outline: none;
+  box-shadow: 0 0 5px 1px rgba(0, 106, 108, .5);
+}
+
+
+.cp_iptxt_child textarea {
+  font: 15px/24px sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.7em;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  color: #777;
+  border: 1px solid #aaaaaa;
+  border-radius: 40px;
+}
+
+/* ------------------------------------------------------------------------------
+	 Image Change Panel
+-------------------------------------------------------------------------------*/
+
+#image_change_panel_sitter{
+  background-color: white;
+  z-index: 100;
+  position: absolute;
+  top: 40%;
+  border-radius: 20px;
+  display: none;
+}
+
+#image_change_panel_parent{
+  background-color: white;
+  z-index: 100;
+  position: absolute;
+  top: 40%;
+  border-radius: 20px;
+  display: none;
+}
+
+#file{
+  margin-bottom: 20px;
+}
+
+.image_change_form{
+  padding:30px 20px;
+
+}
+
+.image_change_button{
+  text-align: right;
+  background-color: #00ac97;
+  border-radius: 20px 20px 0 0 / 20px 20px 0 0;
+  -webkit-border-radius: 20px 20px 0 0 / 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0 / 20px 20px 0 0;
+}
+
+.close_button{
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #ffffff;
+}

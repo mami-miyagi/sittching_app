@@ -1,0 +1,38 @@
+<div class="reservesitter_wrapper">
+  <!-- searchへのリンク -->
+  <div class="round_back">
+    <a class="page_link" href="/parentpage">
+      <i class="fas fa-arrow-left"></i>
+    </a>
+  </div>
+  <div class="bg-mask">
+    <div class="reservesitter_panel">
+      <div class="list_title">
+        <h1>Sitter List</h1>
+      </div>
+      <!-- 検索リスト -->
+      <div class="reservesitterlist_panel">
+        <% @res.each do |row| %>
+          <div>
+            <div class="reservesitterlist">
+              <div class="panel_text_box">
+                <div class="panel_text">
+                  <ul>
+                    <li class="under_space"><i class="fas fa-user"></i> <%= row['last_name'] %>さん</li>
+                    <li class="under_space"><i class="fas fa-calendar-alt"></i> <%= row['date'] %></li>
+                    <li><i class="fas fa-clock"></i> <%= row['start_time'] %>〜<%= row['end_time'] %></li>
+                  </ul>
+                </div>
+              </div>
+              <a class="page_link" href="/reservesitter_del/<%= row['id'] %>" onClick="return confirm('予約をキャンセルします。\nよろしいですか？');">
+                <div class="panel_link_box">
+                  <i class="fas fa-times"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

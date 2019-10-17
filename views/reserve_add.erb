@@ -1,0 +1,30 @@
+<div class="add_wrapper">
+  <div class="bg-mask">
+    <div class="form_panel">
+      <!-- reserve_listへのリンク -->
+      <div class="round_back"><a class="page_link" href="/reserve_list"><i class="fas fa-arrow-left"></i></a></div>
+
+        <h1 class="page_title">Reserve</h1>
+      <form class="form_area_reserve_add" action="/reserve_add" method="POST">
+        <div class="cp_iptxt">
+          <label class="ef">
+            <input type="date" name="date" placeholder="" required="required">
+          </label>
+        </div>
+        <div class="cp_iptxt_par">
+          <div class="cp_iptxt_child cp_iptxt_child_left">
+            <label class="ef">開始時間
+              <input type="time" name="start_time" value="10:00">
+            </label>
+          </div>
+          <div class="cp_iptxt_child">
+            <label class="ef">終了時間
+              <input type="time" name="end_time" value="15:00">
+            </label>
+          </div>
+        </div>
+        <input type="submit" class="submit_btn" value="追加する">
+      </form>
+    </div>
+  </div>
+</div>

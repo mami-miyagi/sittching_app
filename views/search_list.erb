@@ -1,0 +1,36 @@
+<div class="list_wrapper">
+  <!-- searchへのリンク -->
+  <div class="round_add"><a class="page_link" href="/reserve_search"><i class="fas fa-search"></i></a></div>
+  <!-- reserve_searchへのリンク -->
+  <div class="round_back"><a class="page_link" href="/reserve_search"><i class="fas fa-arrow-left"></i></a></div>
+
+
+  <div class="bg-mask">
+    <div class="list_panel">
+      <div class="list_title">
+        <h1>Search List</h1>
+      </div>
+      <!-- 検索リスト -->
+      <div class="searchlist_panel">
+        <% @res.each do |row| %>
+        <div><a href="/reservation/<%= row['id'] %>">
+          <div class="searchlist">
+            <div class="panel_image_box">
+              <div class="panel_image"><img class="<%= row['sex'] %>" src="<%= row['image_pass'] %>" alt=""></div>
+            </div>
+            <div class="panel_text_box">
+              <div class="panel_text">
+                <ul>
+                  <li class="under_space"><%= row['last_name'] %>さん</li>
+                  <li class="under_space"><%= row['date'] %></li>
+                  <li><%= row['start_time'] %>〜<%= row['end_time'] %></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </a></div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
